@@ -1,0 +1,1172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black-contrast.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/night.css">
+	<style>
+		/* Match your actual markup inside Reveal */
+		.reveal p.author {
+			line-height: 0.8;
+		}
+
+		.reveal a.orcid {
+			display: inline-flex;
+			align-items: baseline;
+			gap: .35rem;
+			font-size: 24.5px;
+			line-height: 1;
+		}
+
+		.reveal a.orcid img.orcid-icon {
+			height: 0.8em !important;
+			/* or 1em; 0.85em fits this SVG visually */
+			width: auto !important;
+			max-height: none !important;
+
+			/* override reveal's default img styling */
+			margin: 0 !important;
+			background: transparent !important;
+			box-shadow: none !important;
+			border: 0 !important;
+		}
+
+
+		/* Fixed logo in the top-right corner of the viewport */
+		.reveal::after {
+			content: '';
+			position: fixed;
+			top: 24px;
+			right: 24px;
+			width: clamp(120px, 18vw, 480px);
+			height: clamp(120px, 18vw, 480px);
+			background-image: url('logo.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: top right;
+			pointer-events: none;
+			z-index: 30;
+		}
+
+		/* Fixed CC BY-SA badge in the bottom-left corner of the viewport */
+		.reveal::before {
+			content: '';
+			position: fixed;
+			bottom: 24px;
+			left: 24px;
+			width: clamp(80px, 12vw, 120px);
+			height: clamp(80px, 12vw, 120px);
+			background-image: url('cc-by-sa.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: bottom left;
+			pointer-events: none;
+			z-index: 30;
+		}
+
+		/* Responsive row of icons that shrink to stay on one line */
+		.reveal .icon-row {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			gap: 16px;
+			flex-wrap: nowrap;
+			max-width: 100%;
+		}
+
+		.reveal .icon-row figure {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0;
+			flex: 1 1 0;
+			min-width: 0;
+			max-width: 250px;
+		}
+
+		.reveal .icon-row img {
+			width: 100%;
+			max-width: 250px;
+			height: auto;
+		}
+
+		.reveal .icon-row p {
+			margin-top: 0.35rem;
+			font-size: 0.9em;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Open Access</h1>
+				<p class="author">David Krassnig, TU Wien<br>
+					<a class="orcid" href="https://orcid.org/0000-0002-1626-7987"
+						title="ORCiD Profile for David Krassnig">
+						<img class="orcid-icon" src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg"
+							alt="ORCID iD">
+						<span class="orcid-url">https://orcid.org/0000-0002-1626-7987</span>
+					</a>
+				</p>
+			</section>
+			<section>
+				<section
+					data-background-image="https://upload.wikimedia.org/wikipedia/commons/7/77/Open_Access_logo_PLoS_transparent.svg"
+					data-background-size="auto 75%" data-background-position="center">
+					<h2>What is Open Access?</h2>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>How would <em>you</em> define <emph>Open Access?</emph>
+					</p>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>How would <em>you</em> define <emph>Open Access?</emph>
+					</p>
+					<a href="https://www.menti.com/ald3iwuuafe9"><img data-src="qr.png" width="250px"
+							style="display: block; margin: 0 auto;"></a>
+					<p style="margin: 0;"><a href="https://www.menti.com">www.menti.com</a><br>Enter 1328 4513</p>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<iframe
+						data-src="https://www.mentimeter.com/app/presentation/alrkwmup3u3482zrqg5y3fzpe4n2vg5z/embed"
+						data-preload style="width: 75%; height: 450px; border: 0;"></iframe>
+				</section>
+				<section data-auto-animate=>
+					<h3>How is Open Access defined?</h3>
+					<p class="fragment">Budapest Open Access Initiative</p>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>Budapest Open Access Initiative</p>
+					<div class="icon-row">
+						<figure>
+							<img src="read.png" alt="Read">
+							<p>Read</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>Budapest Open Access Initiative</p>
+					<div class="icon-row">
+						<figure>
+							<img src="read.png" alt="Read">
+							<p>Read</p>
+						</figure>
+						<figure>
+							<img src="share.png" alt="Share">
+							<p>Share</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>Budapest Open Access Initiative</p>
+					<div class="icon-row">
+						<figure>
+							<img src="read.png" alt="Read">
+							<p>Read</p>
+						</figure>
+						<figure>
+							<img src="share.png" alt="Share">
+							<p>Share</p>
+						</figure>
+						<figure>
+							<img src="attribution2.png" alt="Attribution">
+							<p>Attribution</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>Berlin Declaration</p>
+					<div class="icon-row">
+						<figure>
+							<img src="read.png" alt="Read">
+							<p>Read</p>
+						</figure>
+						<figure>
+							<img src="share.png" alt="Share">
+							<p>Share</p>
+						</figure>
+						<figure>
+							<img src="attribution2.png" alt="Attribution">
+							<p>Attribution</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>Berlin Declaration</p>
+					<div class="icon-row">
+						<figure>
+							<img src="read.png" alt="Read">
+							<p>Read</p>
+						</figure>
+						<figure>
+							<img src="share.png" alt="Share">
+							<p>Share</p>
+						</figure>
+						<figure>
+							<img src="attribution2.png" alt="Attribution">
+							<p>Attribution</p>
+						</figure>
+						<figure>
+							<img src="remix2.png" alt="Remix">
+							<p>Remix</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>Berlin Declaration</p>
+					<div class="icon-row">
+						<figure>
+							<img src="read.png" alt="Read">
+							<p>Read</p>
+						</figure>
+						<figure>
+							<img src="share.png" alt="Share">
+							<p>Share</p>
+						</figure>
+						<figure>
+							<img src="attribution2.png" alt="Attribution">
+							<p>Attribution</p>
+						</figure>
+						<figure>
+							<img src="remix2.png" alt="Remix">
+							<p>Remix</p>
+						</figure>
+						<figure>
+							<img src="deposit.png" alt="Deposit">
+							<p>Deposit</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access defined?</h3>
+					<p>Budapest Open Access Initiative</p>
+					<div class="icon-row">
+						<figure>
+							<img src="read.png" alt="Read">
+							<p>Read</p>
+						</figure>
+						<figure>
+							<img src="share.png" alt="Share">
+							<p>Share</p>
+						</figure>
+						<figure>
+							<img src="attribution2.png" alt="Attribution">
+							<p>Attribution</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access implemented?</h3>
+				</section>
+				<section data-auto-animate>
+					<h3>How is Open Access implemented?</h3>
+					<ul>
+						<li>License</li>
+						<ul>
+							<li class="fragment">Creative Commons Licenses</li>
+							<li class="fragment">CC BY (4.0) corresponds to Budapest OA Initiative</li>
+						</ul>
+						<li>Publishing Model</li>
+						<ul>
+							<li class="fragment">Who pays the publishing costs?</li>
+							<li class="fragment">Which version is affected?</li>
+							<li class="fragment">Overall status of the journal?</li>
+						</ul>
+					</ul>
+					<div class="r-hstack justify-center; fragment" style="padding-top: 20px;">
+						<div data-id="box1"
+							style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+						<div data-id="box2"
+							style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+						<div data-id="box3"
+							style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+						<div data-id="box4"
+							style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+						<div data-id="box5"
+							style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+						<div data-id="box6"
+							style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0"
+							style="background: rgb(255, 255, 255); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box2" data-auto-animate-delay="0.1"
+							style="background: rgb(251, 255, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box3" data-auto-animate-delay="0.2"
+							style="background: rgb(58, 230, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box4" data-auto-animate-delay="0.3"
+							style="background: rgb(215, 58, 58); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box5" data-auto-animate-delay="0.4"
+							style="background: rgb(173, 112, 38); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box6" data-auto-animate-delay="0.5"
+							style="background: rgb(49, 49, 49); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+					</div>
+					<h3 style="margin-top: 20px;">Types of Open Access</h3>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1"
+							style="background: rgb(255, 255, 255); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-id="box2"
+							style="background: rgb(251, 255, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box3"
+							style="background: rgb(58, 230, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box4"
+							style="background: rgb(215, 58, 58); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box5"
+							style="background: rgb(173, 112, 38); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box6"
+							style="background: rgb(49, 49, 49); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+					</div>
+					<h3 style="margin-top: 20px;" data-auto-animate-delay="0.3">Diamond Open Access</h3>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1"
+							style="background: rgb(255, 255, 255); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box2"
+							style="background: rgb(251, 255, 0); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-id="box3"
+							style="background: rgb(58, 230, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box4"
+							style="background: rgb(215, 58, 58); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box5"
+							style="background: rgb(173, 112, 38); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box6"
+							style="background: rgb(49, 49, 49); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+					</div>
+					<h3 style="margin-top: 20px;" data-auto-animate-delay="0.3">Gold Open Access</h3>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1"
+							style="background: rgb(255, 255, 255); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box2"
+							style="background: rgb(251, 255, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box3"
+							style="background: rgb(58, 230, 0); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-id="box4"
+							style="background: rgb(215, 58, 58); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box5"
+							style="background: rgb(173, 112, 38); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box6"
+							style="background: rgb(49, 49, 49); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+					</div>
+					<h3 style="margin-top: 20px;" data-auto-animate-delay="0.3">Green Open Access</h3>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1"
+							style="background: rgb(255, 255, 255); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box2"
+							style="background: rgb(251, 255, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box3"
+							style="background: rgb(58, 230, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box4"
+							style="background: rgb(215, 58, 58); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-id="box5"
+							style="background: rgb(173, 112, 38); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box6"
+							style="background: rgb(49, 49, 49); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+					</div>
+					<h3 style="margin-top: 20px;" data-auto-animate-delay="0.3">Hybrid Open Access</h3>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1"
+							style="background: rgb(255, 255, 255); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box2"
+							style="background: rgb(251, 255, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box3"
+							style="background: rgb(58, 230, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box4"
+							style="background: rgb(215, 58, 58); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box5"
+							style="background: rgb(173, 112, 38); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-id="box6"
+							style="background: rgb(49, 49, 49); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+					</div>
+					<h3 style="margin-top: 20px;" data-auto-animate-delay="0.3">Bronze Open Access</h3>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1"
+							style="background: rgb(255, 255, 255); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box2"
+							style="background: rgb(251, 255, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box3"
+							style="background: rgb(58, 230, 0); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box4"
+							style="background: rgb(215, 58, 58); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box5"
+							style="background: rgb(173, 112, 38); width: 120px; height: 120px; margin: 10px; border-radius: 50%;">
+						</div>
+						<div data-id="box6"
+							style="background: rgb(49, 49, 49); width: 150px; height: 120px; margin: 10px;"></div>
+					</div>
+					<h3 style="margin-top: 20px;" data-auto-animate-delay="0.3">Black Open Access</h3>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-vstack justify-center" style="align-items: flex-start; row-gap: 12px;">
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box1"
+								style="background: rgb(255, 255, 255); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Diamond Open Access</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box2"
+								style="background: rgb(251, 255, 0); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Gold Open Access</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box3"
+								style="background: rgb(58, 230, 0); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Green Open Access</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box4"
+								style="background: rgb(215, 58, 58); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Hybrid Open Access</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box5"
+								style="background: rgb(173, 112, 38); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Bronze Open Access</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box6"
+								style="background: rgb(49, 49, 49); width: 150px; height: 80px; flex-shrink: 0; display: grid; place-items: center;">
+							</div>
+							<div style="text-align: left;">Black Open Access</div>
+						</div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-vstack justify-center" style="align-items: flex-start; row-gap: 12px;">
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box1"
+								style="background: rgb(255, 255, 255); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Publishing for Free</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box2"
+								style="background: rgb(251, 255, 0); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Publishing for a Fee</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box3"
+								style="background: rgb(58, 230, 0); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Publish the Accepted Manuscript</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box4"
+								style="background: rgb(215, 58, 58); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Publish Open Access in Closed Journal</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box5"
+								style="background: rgb(173, 112, 38); width: 150px; height: 80px; flex-shrink: 0;">
+							</div>
+							<div style="text-align: left;">Unknown License but Free to Read</div>
+						</div>
+						<div class="r-hstack"
+							style="display: grid; grid-template-columns: 150px auto; column-gap: 16px; align-items: center;">
+							<div data-id="box6"
+								style="background: rgb(49, 49, 49); width: 150px; height: 80px; flex-shrink: 0; display: grid; place-items: center;">
+								<div class="fragment">☠️</div>
+							</div>
+							<div style="text-align: left;">Arrrrr ... not (very) cool of you, matey</div>
+						</div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-auto-animate-delay="0.1" data-id="box1"
+							style="background: rgb(255, 255, 255); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-auto-animate-delay="0.15" data-id="box2"
+							style="background: rgb(251, 255, 0); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-auto-animate-delay="0.2" data-id="box3"
+							style="background: rgb(58, 230, 0); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-auto-animate-delay="0.25" data-id="box4"
+							style="background: rgb(215, 58, 58); width: 150px; height: 120px; margin: 10px;"></div>
+					</div>
+					<h4 style="margin-top: 20px;" data-auto-animate-delay="0.6">Only valid open access types</h4>
+				</section>
+				<section data-auto-animate>
+					<h2>Interactive Segment</h2>
+					<ul>
+						<li>Breakout Rooms</li>
+						<li>Discuss for 10 min</li>
+						<li>What are the advantages of each OA type?</li>
+						<li>What are the disadvantages of each OA type?</li>
+						<li>Write keywords of your discussion in CryptPad</li>
+					</ul>
+					<div class="r-hstack justify-center">
+						<div data-auto-animate-delay="0.1" data-id="box1"
+							style="background: rgb(255, 255, 255); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-auto-animate-delay="0.15" data-id="box2"
+							style="background: rgb(251, 255, 0); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-auto-animate-delay="0.2" data-id="box3"
+							style="background: rgb(58, 230, 0); width: 150px; height: 120px; margin: 10px;"></div>
+						<div data-auto-animate-delay="0.25" data-id="box4"
+							style="background: rgb(215, 58, 58); width: 150px; height: 120px; margin: 10px;"></div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h2>Why Open Access?</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>Why Open Access?</h2>
+					<div class="icon-row">
+						<figure>
+							<img src="equity.png" alt="Read">
+							<p>Equitable Access</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2>Why Open Access?</h2>
+					<div class="icon-row">
+						<figure>
+							<img src="equity.png" alt="Read">
+							<p>Equitable Access</p>
+						</figure>
+						<figure>
+							<img src="public-money.png" alt="Share">
+							<p>Public Funding</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2>Why Open Access?</h2>
+					<div class="icon-row">
+						<figure>
+							<img src="equity.png" alt="Read">
+							<p>Equitable Access</p>
+						</figure>
+						<figure>
+							<img src="public-money.png" alt="Share">
+							<p>Public Funding</p>
+						</figure>
+						<figure>
+							<img src="speed.png" alt="Attribution">
+							<p>Faster Adoption</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2>Why Open Access?</h2>
+					<div class="icon-row">
+						<figure>
+							<img src="equity.png" alt="Read">
+							<p>Equitable Access</p>
+						</figure>
+						<figure>
+							<img src="public-money.png" alt="Share">
+							<p>Public Funding</p>
+						</figure>
+						<figure>
+							<img src="speed.png" alt="Attribution">
+							<p>Faster Adoption</p>
+						</figure>
+						<figure>
+							<img src="attention.png" alt="Remix">
+							<p>More Citations</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2>Why Open Access?</h2>
+					<div class="icon-row">
+						<figure>
+							<img src="equity.png" alt="Read">
+							<p>Equitable Access</p>
+						</figure>
+						<figure>
+							<img src="public-money.png" alt="Share">
+							<p>Public Funding</p>
+						</figure>
+						<figure>
+							<img src="speed.png" alt="Attribution">
+							<p>Faster Adoption</p>
+						</figure>
+						<figure>
+							<img src="attention.png" alt="Remix">
+							<p>More Citations</p>
+						</figure>
+						<figure>
+							<img src="save-money.png" alt="Deposit">
+							<p>Save Money</p>
+						</figure>
+					</div>
+				</section>
+				<section data-auto-animate>
+					<h2>Why Open Access?</h2>
+					<div class="icon-row">
+						<figure>
+							<img src="equity.png" alt="Read">
+							<p>Equitable Access</p>
+						</figure>
+						<figure>
+							<img src="public-money.png" alt="Share">
+							<p>Public Funding</p>
+						</figure>
+						<figure>
+							<img src="speed.png" alt="Attribution">
+							<p>Faster Adoption</p>
+						</figure>
+						<figure>
+							<img src="attention.png" alt="Remix">
+							<p>More Citations</p>
+						</figure>
+						<figure>
+							<img src="save-money.png" alt="Deposit">
+							<p>Save Money</p>
+						</figure>
+						<figure>
+							<img src="have-to.png" alt="Deposit">
+							<p>You Have To</p>
+						</figure>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h2>Interactive Segment</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>Interactive Segment</h2>
+					<ul>
+						<li>Breakout Rooms</li>
+						<li>Discuss for 15 min</li>
+						<li>What challenges or questions have you encountered about open access?</li>
+						<li>Share any concerns or benefits you see in making your work Open Access!</li>
+						<li>Write keywords of your discussion in CryptPad</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section data-background-image="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
+					data-auto-animate>
+					<h2>Open Access<br>&<br>the European Union</h2>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+					</div>
+					<p class="fragment" style="font-size: 67%;">EC recommends OA policies for all member states
+						since 2012</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">At least 11 member states have followed suit</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+					</div>
+					<p class="fragment" style="font-size: 67%;">EC followed its own advice in 2014 with Horizon 2020
+					</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">Horizon 2020 provided research grants through open & competitive
+						proposal calls</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">Legal entities from any country were eligible to submit project
+						proposals</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">Participants from European Union member states were automatically
+						fundable</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">Horizon 2020 publications must be published open access within 6
+						months</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">Horizon 2020's successor, Horizon Europe, requires immediate open
+						access</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+						<figure>
+							<img src="eu-infrastructure.png" alt="Remix">
+							<p>Infrastructure</p>
+						</figure>
+					</div>
+					<p class="fragment" style="font-size: 67%;">EU is developing and funding open science
+						infrastructure</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+						<figure>
+							<img src="eu-infrastructure.png" alt="Remix">
+							<p>Infrastructure</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">European Open Science Cloud (EOSC) started in 2015</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+						<figure>
+							<img src="eu-infrastructure.png" alt="Remix">
+							<p>Infrastructure</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">EOSC's goal: federalized open science infrastructure</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+						<figure>
+							<img src="eu-infrastructure.png" alt="Remix">
+							<p>Infrastructure</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">Open Research Europe, a EU wide open access repository, was launched
+					</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Open Access & the EU</h3>
+					<div class="icon-row">
+						<figure>
+							<img src="eu-downwards.png" alt="Share">
+							<p>Standardization</p>
+						</figure>
+						<figure>
+							<img src="eu-money.png" alt="Attribution">
+							<p>Funding</p>
+						</figure>
+						<figure>
+							<img src="eu-infrastructure.png" alt="Remix">
+							<p>Infrastructure</p>
+						</figure>
+					</div>
+					<p style="font-size: 67%;">Open Research Europe's goal: central deposit for EU-funded research
+					</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Plan S</h3>
+					<ul>
+						<li class="fragment">OA Initiative launched by "cOAlition S"</li>
+						<li class="fragment">Consortium of institutions from at least 12 different European countries
+						</li>
+						<li class="fragment">Main goal: open access for state-funded research</li>
+						<li class="fragment">Supported by the European Commission</li>
+						<li class="fragment">Stipulate 10 principles</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Plan S</h3>
+					<ul>
+						<li>Stipulate 10 principles</li>
+						<ol>
+							<li class="fragment">Authors retain copyright and publish OA</li>
+							<li class="fragment">Create robust requirements for eligible journals</li>
+							<li class="fragment">Provide incentives for creation of eligible journals</li>
+							<li class="fragment">Publication fees should be covered by institutions</li>
+							<li class="fragment">Publication fees should be standardized & capped</li>
+						</ol>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h3>Plan S</h3>
+					<ul>
+						<li>Stipulate 10 principles</li>
+						<ol start="6">
+							<li>Institutions should align their OA policies</li>
+							<li class="fragment">OA books are tough and will require more time</li>
+							<li class="fragment">Open repositories are vital</li>
+							<li class="fragment">Hybrid OA is not compliant with key principle</li>
+							<li class="fragment">Non-compliance is monitored & sanctioned</li>
+						</ol>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h2>Interactive Segment</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>Interactive Segment</h2>
+					<ul>
+						<li>Breakout Rooms</li>
+						<li>Discuss for 15 min</li>
+						<li>Does your current country have an OA policy?</li>
+						<li>Does your funding come with an OA mandate?</li>
+						<li>If so, what are its requirements and is there any support infrastructure or legislation?
+						</li>
+						<li>Write keywords of your discussion in CryptPad</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate
+					data-background-image="https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg">
+					<h2 style="color: black;">Open Access in Austria</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Austria</h2>
+					<ul>
+						<li class="fragment">Big proponent of open access</li>
+						<li class="fragment">National Open Access Strategy adopted in 2016</li>
+						<li class="fragment">Open Science Policy in 2022</li>
+						<ul>
+							<li class="fragment">Make all publicly funded research OA by 2025</li>
+							<li class="fragment">Integration with EOSC</li>
+							<li class="fragment">Strong focus on both open access and open data</li>
+							<li class="fragment">Creation of Austrian open science infrastructure</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Austria</h2>
+					<ul>
+						<li>Austrian Science Fund (FWF)</li>
+						<ul>
+							<li class="fragment">State-sponsored research funder</li>
+							<li class="fragment">Most important funder in Austria</li>
+							<li class="fragment">Early member of cOAlition S</li>
+							<li class="fragment">Mandatory open access since 2015</li>
+							<li class="fragment">Funds associated open access costs</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Austria</h2>
+					<ul>
+						<li>Austrian Science Fund (FWF)</li>
+						<ul>
+							<li class="fragment">Requires immediate open access</li>
+							<ul class="fragment">
+								<li>Gold OA</li>
+								<li>Green OA</li>
+								<li>Hybrid OA</li>
+							</ul>
+							<li class="fragment">Requires CC BY license or equivalent</li>
+							<li class="fragment">Hybrid OA requires transformative agreements</li>
+							<li class="fragment">Hybrid OA is impermissible starting 2027</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Austria</h2>
+					<ul>
+						<li>Konsortien E-Medien Österreich (KEMÖ)</li>
+						<ul>
+							<li class="fragment">Nation-wide consortium for negotiating agreements with academic
+								publishers</li>
+							<li class="fragment">Transformative agreements with major publishers</li>
+							<li class="fragment">Transformative agreements with minor publishers</li>
+							<li class="fragment">Most universities are members</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Austria</h2>
+					<ul>
+						<li>Legal right to self-archive</li>
+						<ul>
+							<li class="fragment">Law was introduced in 2015</li>
+							<li class="fragment">Right to publish accepted manuscript</li>
+							<li class="fragment">After 12 months embargo</li>
+							<li class="fragment">For scientific publications</li>
+							<li class="fragment">From institutions with 50%+ public funding</li>
+							<li class="fragment">In journals with more than one issue per year</li>
+						</ul>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section data-background-image="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
+					data-auto-animate>
+					<h2>Open Access in Germany</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Germany</h2>
+					<ul>
+						<li class="fragment">Big proponent of open access</li>
+						<li class="fragment">No uniform national open access policy</li>
+						<li class="fragment">Coalition Agreement 2021-2025: strengthen OA</li>
+						<li class="fragment">Bottom-Up Approach</li>
+						<ul>
+							<li class="fragment">Individual states have OA policies</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Germany</h2>
+					<ul>
+						<li>Deutsche Forschungsgemeinschaft (DFG)</li>
+						<ul>
+							<li class="fragment">State-sponsored research funder</li>
+							<li class="fragment">Most important funder in Germany</li>
+							<li class="fragment">Not a member of cOAlition S</li>
+							<li class="fragment">Only recommends open access</li>
+							<li class="fragment">Subsidies for associated open access costs</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Germany</h2>
+					<ul>
+						<li>DEAL</li>
+						<ul>
+							<li class="fragment">Nation-wide consortium for negotiation</li>
+							<li class="fragment">Transformative agreements with the big three</li>
+							<ul class="fragment">
+								<li>Elsevier</li>
+								<li>Springer</li>
+								<li>Wiley</li>
+							</ul>
+							<li class="fragment">Boycotts pushed publishers to reduce prices</li>
+						</ul>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Open Access in Germany</h2>
+					<ul>
+						<li>Legal right to self-archive</li>
+						<ul>
+							<li class="fragment">Law was introduced in 2014</li>
+							<li class="fragment">Right to publish accepted manuscript</li>
+							<li class="fragment">After 12 months embargo</li>
+							<li class="fragment">For scientific publications</li>
+							<li class="fragment">From research with 50%+ public funding</li>
+							<li class="fragment">In journals with more than one issue per year</li>
+						</ul>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h1>The End</h1>
+				</section>
+				<section data-auto-animate>
+					<h1>The End</h1>
+					<h2>Any questions?</h2>
+				</section>
+			</section>
+		</div>
+	</div>
+
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			slideNumber: 'c/t',
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
